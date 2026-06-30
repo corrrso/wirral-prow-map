@@ -28,7 +28,7 @@ function createMarkerIcon(type, label) {
 const map = L.map('map').setView([53.355, -3.085], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | PROW data: Wirral &amp; Cheshire West councils via <a href="https://www.rowmaps.com">rowmaps.com</a>, <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">OGL</a>. Contains OS data &copy; Crown copyright.',
     maxZoom: 18
 }).addTo(map);
 
