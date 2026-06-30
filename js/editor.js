@@ -16,16 +16,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const waypointData = [
     { lat: 53.2886, lng: -3.0059, label: "A" },
     { lat: 53.3207, lng: -3.0457, label: "2" },
-    { lat: 53.3376, lng: -3.0462, label: "3" },
-    { lat: 53.3554, lng: -3.0461, label: "4" },
-    { lat: 53.3571, lng: -3.0636, label: "5" },
-    { lat: 53.3680, lng: -3.1015, label: "6" },
-    { lat: 53.3735, lng: -3.1073, label: "7" },
-    { lat: 53.3772, lng: -3.1230, label: "B" },
-    { lat: 53.3943, lng: -3.1333, label: "9" },
-    { lat: 53.4034, lng: -3.1382, label: "10" },
-    { lat: 53.4076, lng: -3.1533, label: "11" },
-    { lat: 53.4161, lng: -3.1199, label: "C" }
+    { lat: 53.3571, lng: -3.0636, label: "3" },
+    { lat: 53.3680, lng: -3.1015, label: "4" },
+    { lat: 53.3735, lng: -3.1073, label: "5" },
+    { lat: 53.4034, lng: -3.1382, label: "6" },
+    { lat: 53.4076, lng: -3.1533, label: "7" },
+    { lat: 53.4161, lng: -3.1199, label: "B" }
 ];
 waypointData.forEach(wp => {
     L.circleMarker([wp.lat, wp.lng], {

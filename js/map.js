@@ -1,16 +1,12 @@
 const waypoints = [
     { lat: 53.2886, lng: -3.0059, label: "A", name: "Hadlow Road Railway Station", desc: "Start: Historic station on the Wirral Way, Willaston", type: "start" },
     { lat: 53.3207, lng: -3.0457, label: "2", name: "Willaston South", desc: "Waypoint along PROW heading north", type: "waypoint" },
-    { lat: 53.3376, lng: -3.0462, label: "3", name: "Ledsham / Two Mills", desc: "Path continues through farmland", type: "waypoint" },
-    { lat: 53.3554, lng: -3.0461, label: "4", name: "Capenhurst Area", desc: "Crossing near Capenhurst", type: "waypoint" },
-    { lat: 53.3571, lng: -3.0636, label: "5", name: "Woodchurch / M53", desc: "Path crosses near motorway", type: "waypoint" },
-    { lat: 53.3680, lng: -3.1015, label: "6", name: "Arrowe Park Area", desc: "Near Arrowe Park", type: "waypoint" },
-    { lat: 53.3735, lng: -3.1073, label: "7", name: "Upton Approach", desc: "Approaching Greasby", type: "waypoint" },
-    { lat: 53.3772, lng: -3.1230, label: "B", name: "The Manor, Greasby", desc: "Landmark: The Manor pub, 91 Greasby Rd", type: "poi" },
-    { lat: 53.3943, lng: -3.1333, label: "9", name: "Frankby / West Kirby Path", desc: "Heading towards the coast", type: "waypoint" },
-    { lat: 53.4034, lng: -3.1382, label: "10", name: "Thurstaston Area", desc: "Near Thurstaston Hill", type: "waypoint" },
-    { lat: 53.4076, lng: -3.1533, label: "11", name: "Irby / Pensby", desc: "Western section of route", type: "waypoint" },
-    { lat: 53.4161, lng: -3.1199, label: "C", name: "End Point", desc: "Route end near Storeton / Higher Bebington", type: "end" }
+    { lat: 53.3571, lng: -3.0636, label: "3", name: "Woodchurch / M53", desc: "Path crosses near motorway", type: "waypoint" },
+    { lat: 53.3680, lng: -3.1015, label: "4", name: "Arrowe Park Area", desc: "Near Arrowe Park", type: "waypoint" },
+    { lat: 53.3735, lng: -3.1073, label: "5", name: "Upton Approach", desc: "Approaching Greasby", type: "waypoint" },
+    { lat: 53.4034, lng: -3.1382, label: "6", name: "Thurstaston Area", desc: "Near Thurstaston Hill", type: "waypoint" },
+    { lat: 53.4076, lng: -3.1533, label: "7", name: "Irby / Pensby", desc: "Western section of route", type: "waypoint" },
+    { lat: 53.4161, lng: -3.1199, label: "B", name: "End Point", desc: "Route end near Storeton / Higher Bebington", type: "end" }
 ];
 
 function createMarkerIcon(type, label) {
