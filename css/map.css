@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+#map {
+    width: 100%;
+    height: 100vh;
+}
+.route-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+.route-info h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.route-info .stats {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.waypoint-list {
+    list-style: none;
+    font-size: 13px;
+}
+.waypoint-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.waypoint-list li:last-child {
+    border-bottom: none;
+}
+.wp-number {
+    background: #2196F3;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.wp-number.start { background: #4CAF50; }
+.wp-number.end { background: #f44336; }
+.wp-number.poi { background: #FF9800; }
+.leaflet-popup-content { font-size: 13px; }
+.custom-marker { background: none; border: none; }
+.marker-pin {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 2px solid white;
+}
+.marker-start { background: #4CAF50; }
+.marker-end { background: #f44336; }
+.marker-poi { background: #FF9800; }
+.marker-waypoint { background: #2196F3; }
+
+@media (max-width: 600px) {
+    .route-info {
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        max-height: 40vh;
+    }
+}
